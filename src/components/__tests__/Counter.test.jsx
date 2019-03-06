@@ -10,12 +10,6 @@ import "jest-dom/extend-expect";
 // automatically unmount and cleanup DOM after the test is finished
 afterEach(cleanup);
 
-it("renders without crashes", () => {
-  const { container } = render(<Counter />);
-
-  expect(container.firstChild).toMatchSnapshot();
-});
-
 it("is visible for the users", () => {
   const { getByTestId } = render(<Counter />);
 
