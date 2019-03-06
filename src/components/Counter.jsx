@@ -4,10 +4,12 @@ export function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div data-testid="counter">
       <h2>Counter</h2>
-      <p>count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <p data-testid="text">count: {count}</p>
+      <button onClick={() => setCount(count + 1)} data-testid="button">
+        +
+      </button>
     </div>
   );
 }

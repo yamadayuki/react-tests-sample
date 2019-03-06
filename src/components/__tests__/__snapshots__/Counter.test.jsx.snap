@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashes 1`] = `
+<div
+  data-testid="counter"
+>
+  <h2>
+    Counter
+  </h2>
+  <p
+    data-testid="text"
+  >
+    count: 
+    0
+  </p>
+  <button
+    data-testid="button"
+  >
+    +
+  </button>
+</div>
+`;
